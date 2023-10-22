@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Montserrat:ital,wght@0,100;0,200;0,500;1,500&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@200;300&family=Raleway:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+:root {
+  --text-h1: 40px;
+}
+.p {
+  font-size: 18px;
+}
+/* Navbar starts here */
+.li {
+  list-style: none;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-img img {
+  width: 210px;
+}
+ul li {
+  display: inline;
+  padding-left: 96px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.green-color {
+  background-color: greenyellow;
+  width: 100%;
+}
+/* Navbar Ends here */
+.hero {
+  width: 100%;
+  color: white;
+  /* height: 100%; */
+}
+.hero-img {
+  background-image: url("bg.jpg");
+  background-color: black;
+  min-height: 655px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 18px 43px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.first-card {
+  margin-top: 20px;
+  width: 350px;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+}
+.first-card-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-img img {
+  width: 50px;
+  border-radius: 50px;
+}
+.hero-img h1 {
+  font-size: var(--text-h1);
+}
+.first-icon {
+  cursor: pointer;
+}
+/* Down section starts here  */
+.black-color {
+  background-color: black;
+  width: 100%;
+}
+.input {
+  width: 100%;
+  color: #fff;
+}
+.input input {
+  width: 100%;
+  margin-top: 20px;
+}
+.icons {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.icons i {
+  font-size: var(--text-h1);
+  margin-left: 15px;
+}
+/* Down section Ends here  */
+/* Resposive navbar starts here */
+.navbars {
+  display: none;
+}
+.nava-img img {
+  width: 323px;
+}
+.nava-img {
+  text-align: center;
+}
+/* Resposive navbar Ends here */
+@media screen and (max-width: 991px) {
+  .navbar {
+    display: none;
+  }
+  .navbars {
+    display: block;
+  }
+  .nava-img img {
+    width: 200px;
+  }
+  .hero-img h1 {
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img {
+    background-image: url("responsive.avif");
+  }
+}
